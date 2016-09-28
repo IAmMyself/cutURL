@@ -1,22 +1,26 @@
+This is a URL shortener service.
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+TO SHORTEN URL:
+
+Go to /new then enter the link, it will respond with a JSON object containing the new URL.
+
+For example:
+
+https://chopurl.herokuapp.com/https://www.google.com
+
+will result in:
+
+{
+  "original_url": "https://www.google.com",
+  "new_url": "https://chopurl.herokuapp.com/2"
+}
+
+*NOTE*
+
+You must include an "http://" or "https://", a "www." and a ".com" in your link or the program will reject it.
 
 
-Welcome to your Node.js project on Cloud9 IDE!
 
-This chat example showcases how to use `socket.io` with a static `express` server.
+TO USE SHORTENED URL:
 
-## Running the server
-
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
-
-2) Alternatively you can launch the app from the Terminal:
-
-    $ node server.js
-
-Once the server is running, open the project in the shape of 'https://projectname-username.c9.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+Simply go to the URL provided by your /new request, and you will be redirected to the URL that you gave when creating the shortened URL.
