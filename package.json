@@ -8,6 +8,8 @@
   "dependencies": {
     "async": "~0.2.8",
     "express": "~3.2.4",
-    "socket.io": "~0.9.14"
+    "socket.io": "~0.9.14",
+    "base62": "~1.1.1",
+    "mongodb": "2.2.10"
   }
 }
