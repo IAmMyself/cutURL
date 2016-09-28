@@ -1,14 +1,12 @@
 {
-  "name": "chat-example",
+  "name": "cut-ur;",
   "version": "0.0.0",
-  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "description": "URL Shortener",
   "main": "server.js",
-  "repository": "",
-  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "repository": "https://github.com/IAmMyself/cutURL",
+  "author": "Mateo Pool <loopoetam@gmail.com>",
   "dependencies": {
-    "async": "~0.2.8",
     "express": "~3.2.4",
-    "socket.io": "~0.9.14",
     "base62": "~1.1.1",
     "mongodb": "2.2.10"
   }
