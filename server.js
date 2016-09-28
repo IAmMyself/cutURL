@@ -76,7 +76,7 @@ app.get("/new/*", function (req, res) {
 				if (data[0] != undefined) {
 					var response = {
 						"original_url": uRL,
-						"new_url": "https://url-shortener-fcc-iammyself.c9users.io/" + data[0]["_id"]
+						"new_url": "https://chopurl.herokuapp.com" + data[0]["_id"]
 					};
 					res.send(response);
 					res.end();
