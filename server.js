@@ -2,7 +2,7 @@ var mongo = require('mongodb').MongoClient,
 	express = require('express'),
 	Base62 = require("base62"),
 	nextId = "1",
-	url = 'mongodb://localhost:27017/URLShortener',
+	url = process.env.MONGOLAB_URI,
 	app = express();
 
 mongo.connect(url, function(err, db) {
