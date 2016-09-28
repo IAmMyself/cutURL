@@ -60,7 +60,7 @@ app.get("/new/*", function (req, res) {
 				})
 				var response = {
 					"original_url": uRL,
-					"new_url": "https://url-shortener-fcc-iammyself.c9users.io/" + nextId
+					"new_url": "https://chopurl.herokuapp.com" + nextId
 				};
 				res.send(response);
 				res.end()
