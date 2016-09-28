@@ -1,5 +1,5 @@
 {
-  "name": "cut-ur;",
+  "name": "cut-url",
   "version": "0.0.0",
   "description": "URL Shortener",
   "main": "server.js",
