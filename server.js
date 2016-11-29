@@ -1,11 +1,12 @@
 var mongo = require('mongodb').MongoClient,
 	express = require('express'),
 	Base62 = require("base62"),
+	path = require("path"),
 	nextId = "1",
 	url = process.env.MONGOLAB_URI,
 	app = express();
 
-mongo.connect(url, function(err, db) {
+/*mongo.connect(url, function(err, db) {
 	if (err != undefined) {
 		throw err;
 	}
@@ -14,8 +15,11 @@ mongo.connect(url, function(err, db) {
     		nextId = Base62.encode(Base62.decode(data[0]["_id"]) + 1);
     	}
     })
-})
+})*/
 
+app.get("/", function(req, res) {
+	res.sendfile(path.join(__dirname, "README.html"));
+})
 
 app.get("/:id", function (req, res) {
 	var id = req.params.id;
