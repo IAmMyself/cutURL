@@ -1,13 +1,31 @@
 {
-  "name": "cut-url",
-  "version": "0.0.0",
-  "description": "URL Shortener",
+  "name": "shorturl",
+  "version": "0.0.1",
+  "description": "API project for freeCodeCamp",
   "main": "server.js",
-  "repository": "https://github.com/IAmMyself/cutURL",
-  "author": "Mateo Pool <loopoetam@gmail.com>",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
-    "express": "~3.2.4",
-    "base62": "~1.1.1",
-    "mongodb": "2.2.10"
-  }
+    "express": "^5.0.0-alpha.2",
+    "mongodb": "2.2.10",
+    "mongoose": "^5.4.3",
+    "cors": "^2.8.5",
+    "body-parser": "^1.18.3",
+    "base62": "^2.0.0",
+    "dns": "0.2.2"
+  },
+  "engines": {
+    "node": "4.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://hyperdev.com/#!/project/welcome-project"
+  },
+  "keywords": [
+    "node",
+    "hyperdev",
+    "express"
+  ],
+  "license": "MIT"
 }
